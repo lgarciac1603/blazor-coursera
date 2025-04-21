@@ -1,0 +1,64 @@
+# .NET build artifacts
+**/bin/
+**/obj/
+**/out/
+**/Debug/
+**/Release/
+
+# User-specific files
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+.history/
+
+# ASP.NET generated files
+**/wwwroot/css/
+**/wwwroot/js/
+
+# Blazor specific
+**/wwwroot/dist/
+**/wwwroot/.vite/
+**/wwwroot/_framework/
+**/wwwroot/_content/
+
+# Publish outputs
+**/publish/
+
+# NuGet packages
+**/packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Logs
+**/logs/
+*.log
+
+# dotnet user secrets
+**/secrets.json
+
+# Environment files
+.env
+**/.env
+
+# node_modules (if using npm or vite in wwwroot)
+**/node_modules/
+
+# MonoRepo-specific (optional, depending on tools)
+*.DS_Store
+Thumbs.db
+
+# Optional: test results
+**/TestResults/
+
+# Optional: coverage reports
+**/coverage/
+**/coverage*.json
+**/lcov-report/
