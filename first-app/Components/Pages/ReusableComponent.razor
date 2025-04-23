@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Components
+@inject DataService DataService
+
+@code {
+  [CascadingParameter]
+  public string ThemeColor { get; set; }
+}
+
+<div style="padding:10px; border:1px solid black;">
+  <p style="color:@ThemeColor;">Reusable Component Content</p>
+</div>
+
