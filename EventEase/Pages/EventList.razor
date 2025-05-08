@@ -1,0 +1,19 @@
+@page "/events"
+@using EventEase.Models
+@using EventEase.Shared
+
+<h2>Upcoming Events</h2>
+
+@foreach (var ev in events)
+{
+  <EventCard EventName="@ev.Name" EventDate="@ev.Date" EventLocation="@ev.Location" />
+}
+
+@code {
+  private List<Event> events = new()
+  {
+    new Event { Name = "Tech Conference 2025", Date = DateTime.Today.AddDays(10), Location = "New York" },
+    new Event { Name = "Marketing Summit", Date = DateTime.Today.AddDays(30), Location = "San Francisco" },
+    new Event { Name = "Startup Expo", Date = DateTime.Today.AddDays(60), Location = "Chicago" }
+  };
+}
